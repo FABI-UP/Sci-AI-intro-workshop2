@@ -8,7 +8,7 @@ FABI, University of Pretoria · Date TBC · Presented by Prof. Bernard Slippers.
 
 The workpack is hosted at:
 
-**https://fabi-up.github.io/Sci-AI-intro-workshop1/**
+**https://fabi-up.github.io/Sci-AI-intro-workshop2/**
 
 Everything is self-contained static HTML — it also works fully offline. Just open `index.html` in a browser.
 
