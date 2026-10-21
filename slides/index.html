@@ -254,12 +254,13 @@ Under 200 words. Here is the QC report: <span class="ph">[PASTE]</span></div>
 
 <!-- 20 · AI co-scientist + IMO gold -->
 <section class="slide">
-  <div class="slide-kicker">2025 · reasoning, not just recall</div>
+  <div class="slide-kicker">2025–2026 · reasoning, not just recall</div>
   <h2>A decade of work in two days. Gold-medal maths.</h2>
   <div class="split">
     <div class="callout callout-tip">
-      <div class="callout-title">The "AI co-scientist"</div>
-      <p>Given a hard open question on how superbugs acquire antibiotic resistance, Google's multi-agent system independently proposed — in <strong>~2 days</strong> — the same key hypothesis a research team had spent <strong>~10 years</strong> reaching, unpublished. The lead confirmed it had no access to their work.</p>
+      <div class="callout-title">Co-Scientist</div>
+      <p>Asked how cf-PICIs spread across so many bacterial species, Google's multi-agent system proposed a top hypothesis in <strong>2 days</strong>. cf-PICIs are mobile genetic elements that carry antibiotic-resistance genes. The hypothesis matched what an experimental team had reached over <strong>~10 years</strong> and not yet published. That team's own experiments, published in parallel, are the confirmation.</p>
+      <p class="src">Gottweis et al. 2026, <em>Nature</em> <a href="../references.html#ref10">[10]</a> · the experiments: Penadés et al. and He et al. 2025, <em>Cell</em></p>
     </div>
     <div class="callout callout-info frag">
       <div class="callout-title">2025 Maths Olympiad</div>
@@ -268,14 +269,22 @@ Under 200 words. Here is the QC report: <span class="ph">[PASTE]</span></div>
   </div>
 </section>
 
-<!-- 21 · Closest to home (placeholder) -->
+<!-- 21 · Closest to home -->
 <section class="slide">
-  <div class="slide-kicker">Closest to home · [PLACEHOLDER]</div>
-  <h2>[A verified example of AI already used in plant/microbial biology]</h2>
-  <div class="callout callout-warn" style="margin-top:1rem">
-    <div class="callout-title">Facilitator note — fill in before this ships</div>
-    <p>This slide needs a real, citable case close to this audience's own field — the equivalent of "PlantVillage Nuru diagnosing cassava disease from a phone photo" in the AATF version. Don't invent one; a made-up example on the one slide about verifying real examples would undercut the whole afternoon.</p>
+  <div class="slide-kicker">Closest to home · plant immunity</div>
+  <h2>AI found an unexpected shape in a plant immune receptor</h2>
+  <div class="split">
+    <div class="stack">
+      <p>NRC immune receptors normally assemble into a six-part ring, a <em>hexamer</em>. A team at The Sainsbury Laboratory used <strong>AlphaFold 3</strong> to model 637 NRC proteins from 85 plant species, then scored each model for how far it departs from that ring.</p>
+      <p class="frag">The scoring flagged <strong>NRC7</strong>. In the lab, NRC7 from potato, tomato and <em>N. benthamiana</em> formed an <strong>11-part ring</strong> under the electron microscope.</p>
+    </div>
+    <div class="callout callout-info frag">
+      <div class="callout-title">Human + AI, not AI alone</div>
+      <p>Experts defined 8 scoring features and Co-Scientist proposed 7, four of them the same. Either set alone misclassified one benchmark protein; the combined set separated them all.</p>
+      <p style="margin-top:.6rem"><strong>A preprint:</strong> not yet peer reviewed.</p>
+    </div>
   </div>
+  <p class="src">Toghani et al. 2026, <em>bioRxiv</em> <a href="../references.html#toghani2026">[B]</a></p>
 </section>
 
 <!-- 22 · The honest counterweight -->
@@ -352,7 +361,7 @@ or questions it needs from me.
 <section class="slide section">
   <div class="slide-kicker">Part 5</div>
   <h1>From chatbot to agent</h1>
-  <p class="lead">The leap that makes 2026 different: AI that doesn't just answer — it <em>acts</em>. Scaffolded, as we go, by ten simple rules for working with an AI research assistant.</p>
+  <p class="lead">The leap that makes 2026 different: AI that doesn't just answer — it <em>acts</em>. Scaffolded, as we go, by ten simple rules for developing and using an AI research assistant.</p>
 </section>
 
 <!-- 29 · What's missing -->
@@ -367,7 +376,7 @@ or questions it needs from me.
     <div class="callout-title">Memory, in practice</div>
     <p>You already saw the short kind in the last demo — Claude held context <em>within</em> one chat, so you only said what to change. The kind that matters more day-to-day is longer: a <strong>Project</strong> remembers your literature and your context <em>across every chat inside it</em>, so you stop re-explaining your study each time. Watch for it in the live build, coming up.</p>
   </div>
-  <p class="frag" style="margin-top:1rem;font-size:.95rem;color:var(--text-mute)">→ Rule 2: invest in durable context and memory.</p>
+  <p class="frag" style="margin-top:1rem;font-size:.95rem;color:var(--text-mute)">→ Rule 2: invest in durable context and memory. Keep it in plain files you control, not only in the tool's own memory. Write it as <em>principles</em> (the criteria a dataset must meet), not inventories (today's list of datasets), which go stale. <a href="../references.html#ref8">[8]</a></p>
   <p class="frag" style="margin-top:.8rem">Give a language model <strong>memory and tools, and the ability to plan</strong> — and you get an <em>agent</em>.</p>
 </section>
 
@@ -416,6 +425,8 @@ or questions it needs from me.
     <div class="card"><div class="kicker">Revise</div><p>Adjust and go again — until done.</p></div>
   </div>
   <p class="frag center" style="margin-top:1.5rem;font-weight:700;color:var(--brand)">Plan → Act → Observe → Revise. The agent runs this loop for you, many times, quickly.</p>
+  <p class="frag center" style="margin-top:.8rem">Keep it <strong>researcher-led, agent-implemented</strong>: you set the questions and judge the evidence; the agent executes the cycle.</p>
+  <p class="src center">→ Rules 4 &amp; 5. The agent literature describes the same cycle as perception–planning–action–reflection <a href="../references.html#ref6">[6</a>,<a href="../references.html#ref7">7]</a>.</p>
 </section>
 
 <!-- 33 · where agents run -->
@@ -452,12 +463,13 @@ or questions it needs from me.
     <div class="card"><span class="badge badge-int">Practice hour</span><h3>Builds 2–4</h3><p>Cowork on a folder of papers or data, a stats question computed with visible working, and a weekly literature-scan agent — you'll try these yourself after the break.</p></div>
   </div>
   <p class="frag" style="margin-top:1.2rem">In the practice hour: the demo pack, <strong>or a real paper or dataset from your own desk</strong> — once your account settings are checked.</p>
+  <p class="frag" style="margin-top:.6rem;font-size:.9rem;color:var(--text-mute)">→ Rule 3: build a living knowledge base, not one-off answers. Whatever the Project produces worth keeping goes back into its files, so the team gains from it too, not only the assistant.</p>
 </section>
 
 <!-- 36 · human boundary -->
 <section class="slide quote">
   <blockquote>The agent drafts.<br>A human decides.</blockquote>
-  <cite>Automate the work. Never automate the accountability.</cite>
+  <cite>Automate the work. Never automate the accountability.<br><span style="font-size:.85rem;opacity:.85">→ Rule 4: delegate the tedious, own the science.</span></cite>
 </section>
 
 <!-- ══════════════ CHAPTER 5 — SCIENTIFIC RIGOR & SECURITY (13:00) ══════════════ -->
@@ -472,24 +484,25 @@ or questions it needs from me.
 <!-- 38 · Ten Simple Rules -->
 <section class="slide">
   <div class="slide-kicker">The reframe</div>
-  <h2>Ten simple rules for working with an AI research assistant</h2>
+  <h2>Ten simple rules for developing and using an AI research assistant</h2>
   <div class="grid grid-2" style="margin-top:1rem;font-size:.95rem">
     <ol class="steps" style="margin:0">
-      <li>Give it a workspace it can navigate</li>
+      <li>Give it a well-ordered workspace it can navigate</li>
       <li>Invest in durable context &amp; memory</li>
       <li>Build a living knowledge base, not one-off answers</li>
       <li>Delegate the tedious, own the science</li>
-      <li>Let one assistant span the whole research lifecycle</li>
+      <li>Let one supervisor assistant span the whole research lifecycle</li>
     </ol>
-    <ol class="steps" style="margin:0" start="6">
-      <li>Verify against authoritative sources, systematically</li>
-      <li>Track provenance; tier sources by authority</li>
+    <ol class="steps" style="margin:0;counter-reset:step 5" start="6">
+      <li>Systematically verify against primary sources</li>
+      <li>Track provenance; tier your sources by authority</li>
       <li>Know the assistant's reach — make it flag its limits</li>
       <li>Version the AI-assisted workflow itself</li>
       <li>Encode what works into a reusable, shared template</li>
     </ol>
   </div>
-  <p class="frag" style="margin-top:1.2rem">You've already seen most of these today. This afternoon is rules 6 and 7 — <strong>verification and provenance</strong> — in depth.</p>
+  <p class="frag" style="margin-top:1.2rem">You've already seen most of these today. This afternoon goes deeper on rules 6–9: <strong>verification, provenance, limits and versioning</strong>.</p>
+  <p class="src">From an article in preparation (not yet peer reviewed). The papers behind each rule are in the <a href="../references.html">references</a>.</p>
 </section>
 
 <!-- 39 · five questions -->
@@ -510,11 +523,11 @@ or questions it needs from me.
   <div class="slide-kicker">The Proportionality Principle</div>
   <h2>A jet, a car, and a bicycle</h2>
   <div class="grid grid-3" style="margin-top:1rem">
-    <div class="card"><h3>🚲 Bicycle</h3><p>Manual methods. Slow, but the failure modes are small and visible.</p></div>
-    <div class="card"><h3>🚗 Car</h3><p>Previous digital tools. Faster, with known, bounded risks.</p></div>
-    <div class="card"><h3>✈️ Jet</h3><p>AI. Enormous capability — and enormously more can go wrong, faster, if mishandled.</p></div>
+    <div class="card"><h3>🚲 Bicycle</h3><p>Manual methods. Needs only a rider. Slow, but the failure modes are small and visible.</p></div>
+    <div class="card"><h3>🚗 Car</h3><p>Earlier digital tools. Needs a licence, rules of the road and a seatbelt.</p></div>
+    <div class="card"><h3>✈️ Jet</h3><p><strong>Agentic assistants.</strong> Needs certified training, pre-flight checklists and air-traffic control. Weeks of work in minutes, and errors can spread just as fast.</p></div>
   </div>
-  <div class="callout callout-warn frag" style="margin-top:1.2rem"><p><strong>Safeguards must scale with capability.</strong> AI is most dangerous exactly where you lack domain experience to catch its mistakes — and, used to learn rather than to substitute your judgement, the same power is a learning accelerant.</p></div>
+  <div class="callout callout-warn frag" style="margin-top:1.2rem"><p><strong>Higher capability is a reason to raise your standards, not relax them.</strong> AI is most dangerous exactly where you lack the domain experience to catch its mistakes. Used to learn rather than to replace your judgement, the same power speeds up learning.</p></div>
 </section>
 
 <!-- 41 · traffic light -->
@@ -525,9 +538,10 @@ or questions it needs from me.
   <div class="grid grid-3" style="margin-top:1rem">
     <div class="card"><div class="tl tl-green"><span class="dot"></span>Green — go</div><p style="margin-top:.5rem">Published papers, public datasets, your own non-sensitive drafts. Any assistant.</p></div>
     <div class="card"><div class="tl tl-amber"><span class="dot"></span>Amber — care</div><p style="margin-top:.5rem">Your own unpublished manuscript drafts, preliminary results, internal reports. Safe on a correctly configured account. When in doubt, treat as red.</p></div>
-    <div class="card"><div class="tl tl-red"><span class="dot"></span>Red — stop</div><p style="margin-top:.5rem">Participant/personal data, a collaborator's unpublished data without permission, embargoed results, confidential grant reviews. Settings don't change this — you need a proper legal/ethical basis to share it with <em>any</em> processor.</p></div>
+    <div class="card"><div class="tl tl-red"><span class="dot"></span>Red — stop</div><p style="margin-top:.5rem">Participant/personal data, a collaborator's unpublished data without permission, records supplied under agreement or permit, sensitive localities (e.g. threatened species), embargoed results, confidential grant reviews. Settings don't change this — you need a proper legal/ethical basis to share it with <em>any</em> processor.</p></div>
   </div>
   <div class="callout callout-warn frag" style="margin-top:1.2rem"><p><strong>Rule of thumb:</strong> your settings decide how long it's kept and whether it trains the model. The content decides whether it should leave your hands at all.</p></div>
+  <p class="src frag">→ Rule 8: with an agent that can read your folders, decide what may leave the project, write it into its instructions, and have it <em>declare</em> what it is about to send. On sensitive localities, see <a href="../references.html#ref13">[13]</a>.</p>
 </section>
 
 <!-- 42 · verify / anti-fabrication -->
@@ -540,12 +554,32 @@ or questions it needs from me.
   </div>
   <p class="frag" style="margin-top:1rem">AI for drafting. <strong>Humans and primary sources for truth.</strong> Treat an AI summary as a map, not the territory.</p>
   <div class="callout callout-tip frag" style="margin-top:1rem">
-    <div class="callout-title">Standardise it — Rule 6</div>
-    <p>Put a version of that quoted policy as a standing instruction in a Project, CLAUDE.md, or Skill. This raises the floor — it doesn't replace spot-checking, because an agent can still claim to have verified something it didn't.</p>
+    <div class="callout-title">Standardise it — Rules 6 &amp; 7</div>
+    <p>Put a version of that quoted policy as a standing instruction in a Project, CLAUDE.md, or Skill, and have the agent record <em>where</em> each claim came from. This raises the floor. It doesn't replace spot-checking, because an agent can still claim to have verified something it didn't.</p>
   </div>
+  <p class="src">"Fact check everything": Seckel et al. 2024 <a href="../references.html#ref2">[2]</a>; validate every AI output: Helmy et al. 2025 <a href="../references.html#ref4">[4]</a></p>
 </section>
 
-<!-- 43 · ground it -->
+<!-- 43 · Match verification to risk -->
+<section class="slide">
+  <div class="slide-kicker">How much checking? · Rule 6</div>
+  <h2>Match verification effort to risk</h2>
+  <p>You can't check everything equally hard. Ask three questions about each output:</p>
+  <div class="grid grid-3" style="margin-top:1rem">
+    <div class="card"><h3>Can it be checked?</h3><p>Code can be tested and citations looked up. Interpretations can't easily be verified.</p></div>
+    <div class="card"><h3>Would I spot an error?</h3><p>Inside your expertise, errors stand out. Outside it, confident errors look like confident facts.</p></div>
+    <div class="card"><h3>What would an error cost?</h3><p>Next to nothing for brainstormed ideas; severe for a published analysis.</p></div>
+  </div>
+  <div class="grid grid-3 frag" style="margin-top:1rem">
+    <div class="card"><div class="tl tl-green"><span class="dot"></span>Spot-check</div><p style="margin-top:.5rem">Low stakes, within your expertise.</p></div>
+    <div class="card"><div class="tl tl-amber"><span class="dot"></span>Systematic</div><p style="margin-top:.5rem">High stakes or bound for publication.</p></div>
+    <div class="card"><div class="tl tl-red"><span class="dot"></span>External validation</div><p style="margin-top:.5rem">Outside your expertise, however reasonable it looks.</p></div>
+  </div>
+  <p class="frag" style="margin-top:1rem"><strong>Check immediately whatever the tier</strong> when results fit your expectations perfectly, a citation in your own field is unfamiliar, a precise statistic has no source, or the advice is confident in a field you don't know.</p>
+  <p class="src">Sharpton et al. 2026 <a href="../references.html#ref5">[5]</a> · tested prompts: <a href="https://github.com/SharptonLab/PromptLab">PromptLab</a> (CC BY 4.0)</p>
+</section>
+
+<!-- 44 · ground it -->
 <section class="slide">
   <div class="slide-kicker">The single biggest reliability lever</div>
   <h2>Ground it — make it work from the real text</h2>
@@ -567,9 +601,10 @@ used? If it's not stated, say
       <p>Grounding removes the model's room to invent. It can only answer from what you gave it — and it will tell you when the answer isn't there.</p>
     </div>
   </div>
+  <p class="src frag">→ Rule 8: asking for "not specified" makes a gap visible instead of silently filled <a href="../references.html#ref5">[5]</a>. An assistant that says "I could not reach this" is worth more than one that fills the gap.</p>
 </section>
 
-<!-- 44 · know your ground -->
+<!-- 45 · know your ground -->
 <section class="slide">
   <div class="slide-kicker">Know the ground you stand on</div>
   <h2>The regulatory &amp; institutional context</h2>
@@ -578,10 +613,11 @@ used? If it's not stated, say
     <div class="card"><h3>Your ethics &amp; data policy</h3><p>UP's research ethics committee and data management plan requirements apply to AI tools exactly as they do to any other processor.</p></div>
     <div class="card"><h3>Journal &amp; funder rules</h3><p>Many journals and funders now require disclosing AI use — check before you submit, not after.</p></div>
   </div>
+  <div class="callout callout-tip frag" style="margin-top:1.2rem"><p><strong>Rule 9: keep a record you can disclose from.</strong> Which model (and version or date), what it was used for, how outputs were verified, and what human judgement was applied <a href="../references.html#ref5">[5]</a>. A versioned instruction file and project log answer most of this as you go.</p></div>
   <div class="callout callout-info frag" style="margin-top:1.2rem"><p>Orientation, not legal advice — confirm specifics with your ethics committee and supervisor, and check each journal's and funder's requirements too.</p></div>
 </section>
 
-<!-- 45 · bias / blind spots -->
+<!-- 46 · bias / blind spots -->
 <section class="slide">
   <div class="slide-kicker">A special note for African science</div>
   <h2>The model's blind spots are often <em>your</em> context</h2>
@@ -595,7 +631,7 @@ used? If it's not stated, say
   <p class="frag" style="margin-top:1.2rem"><strong>So:</strong> give local context explicitly, and have a specialist colleague check technical terms it may not know well.</p>
 </section>
 
-<!-- 46 · red team -->
+<!-- 47 · red team -->
 <section class="slide">
   <div class="slide-kicker">✋ Red-team · spot the problem</div>
   <h2>What's wrong here?</h2>
@@ -608,14 +644,14 @@ used? If it's not stated, say
 
 <!-- ══════════════ CHAPTER 6 — YOUR MOVE (13:40) ══════════════ -->
 
-<!-- 47 · Section -->
+<!-- 48 · Section -->
 <section class="slide section">
   <div class="slide-kicker">Part 7 · 13:40</div>
   <h1>Your move</h1>
   <p class="lead">A great workshop changes what you do this week.</p>
 </section>
 
-<!-- 48 · personal path -->
+<!-- 49 · personal path -->
 <section class="slide">
   <div class="slide-kicker">Your personal path</div>
   <h2>Three levels, at your own pace</h2>
@@ -626,7 +662,7 @@ used? If it's not stated, say
   </div>
 </section>
 
-<!-- 49 · remember four things -->
+<!-- 50 · remember four things -->
 <section class="slide">
   <div class="slide-kicker">If you remember only four things</div>
   <h2>The durable ideas</h2>
@@ -639,11 +675,11 @@ used? If it's not stated, say
   <p class="frag muted" style="margin-top:1rem">These outlast any tool, price, or feature. They're the whole game.</p>
 </section>
 
-<!-- 50 · close -->
+<!-- 51 · close -->
 <section class="slide title">
   <div class="slide-kicker" style="color:var(--code-accent)">Thank you</div>
   <h1>Now go reclaim your time.</h1>
-  <p class="subtitle">Your Workpack — slides, exercises, prompt library, and further reading — is yours to keep.<br>Start with one real task. Today.</p>
+  <p class="subtitle">Your Workpack — slides, exercises, prompt library, and the <a href="../references.html" style="color:inherit">papers behind the ten rules</a> — is yours to keep.<br>Start with one real task. Today.</p>
   <p style="margin-top:2rem;opacity:.75;font-size:1rem">FABI · University of Pretoria · [DATE]</p>
 </section>
 

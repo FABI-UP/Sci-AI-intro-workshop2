@@ -16,7 +16,7 @@
     if (progress) progress.style.width = ((i) / (slides.length - 1) * 100) + '%';
     if (slideNum) slideNum.textContent = (i + 1) + ' / ' + slides.length;
     if (location.hash !== '#' + (i + 1)) history.replaceState(null, '', '#' + (i + 1));
-    document.title = 'AATF AI Workshop — Slide ' + (i + 1);
+    document.title = 'FABI AI Workshop — Slide ' + (i + 1);
   }
 
   function next() {

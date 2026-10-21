@@ -20,6 +20,8 @@ Everything is self-contained static HTML — it also works fully offline. Just o
 | [`slides/`](slides/index.html) | The full-day slide deck (keyboard/touch nav, light + dark themes). |
 | [`exercises/prompt-library.html`](exercises/prompt-library.html) | Copy-ready prompts for common research tasks + printable prompt cards. |
 | [`exercises/hands-on-exercises.html`](exercises/hands-on-exercises.html) | Step-by-step exercises up the escalation ladder. |
+| [`references.html`](references.html) | The 16 references behind the ten simple rules (article in preparation), mapped to each rule, plus further reading. |
+| [`references/`](references/) | PDFs of the openly licensed references (CC BY, CC BY-NC, CC BY-NC-ND), redistributed unmodified under their licences. Non-open papers are linked by DOI only. |
 | [`demo-assets/`](demo-assets/README.html) | **Fictional** lab demo materials for live demos. |
 | [`resources/`](resources/) | Deeper reading: a Claude Code guide for scientists. |
 | [`assets/`](assets/) | The shared design system (theme, deck framework, navigation). |
